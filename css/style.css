@@ -1,0 +1,111 @@
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Space Grotesk', Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+header {
+    background: url("../Assets/Illustrations/Bathome1.png");
+    background-size: 100vw;
+    height: 900px;
+}
+
+nav {
+    float: right;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Rajdhani', Verdana, sans-serif;
+    font-size: 36px;
+}
+
+
+/* class */
+
+.container {
+    margin: 0px 102px;
+    padding: 5%;
+    border-right: 1px solid #BCBBBD;
+    border-left: 1px solid #BCBBBD;
+}
+
+.logo-bat:hover {
+    background: #F8F184;
+}
+
+.header-nav {
+    border-bottom: 1px solid #BCBBBD;
+    height: 132px;
+}
+
+.header-rezo {
+    position: fixed;
+    top: 300px;
+    right: 2.5%;
+}
+
+.header-rezo img {
+    display: block;
+    margin: 15px 15px;
+}
+
+.header-rezo .rezo {
+    margin: 25px 60px;
+}
+
+.rezo:hover {
+    background: #F8F184;
+    border-radius: 25%;
+    color: #F8F184;
+}
+
+.sub-container-intro {
+    width: 60%;
+    margin: auto;
+    padding: 15% 5px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.sub-container-intro input {
+    padding: 15px 50px;
+    margin: 30px;
+    background: linear-gradient(#EDDEBF, #19587D);
+    opacity: 40%;
+    color: #FFFFFF;
+    border: none;
+}
+
+.sub-container-intro input:hover {
+    background: linear-gradient(#EDDEBF, #19587D);
+    opacity: 100%;
+    color: #FFFFFF;
+}
+
+.sub-container-intro img {
+    margin-top: 230px;
+}
+
+
+/* police */
+
+@font-face {
+    font-family: 'Rajdhani';
+    src: url("Assets/Polices/rajdhani-medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url("Assets/Polices/space-grotesk-regular.otf") format("opentype");
+}

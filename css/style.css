@@ -6,8 +6,8 @@ body {
 }
 
 header {
-    background: url("../Assets/Illustrations/Bathome1.png");
-    background-size: 100vw;
+    background: url("../Assets/Illustrations/Bathome1.png") no-repeat;
+    background-size: cover;
     height: 900px;
 }
 
@@ -28,6 +28,27 @@ nav a:hover {
 h2 {
     font-family: 'Rajdhani', Verdana, sans-serif;
     font-size: 36px;
+}
+
+section p {
+    text-align: justify;
+    width: 80%;
+}
+
+img[alt="nemesis"] {
+    position: relative;
+    bottom: -100px;
+    left: 100px;
+}
+
+img[alt="bat-black"] {
+    position: relative;
+    left: 990px;
+}
+
+* {
+    animation-name: fadeIn;
+    animation-duration: 3s;
 }
 
 
@@ -97,6 +118,37 @@ h2 {
     margin-top: 230px;
 }
 
+.flexible {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.actor {
+    width: 305px;
+    padding: 25px 25px 0px 0px;
+    display: inline-block;
+}
+
+.actor p {
+    margin: auto;
+    text-align: center;
+}
+
+
+/* id */
+
+#versus {
+    background: url("../Assets/Illustrations/Bathome13.png") no-repeat;
+    background-position-x: 250px;
+    background-position-y: -20px;
+}
+
+#allie {
+    background: url("../Assets/Illustrations/Bathome12.png") no-repeat;
+    background-position-x: 850px;
+    background-position-y: -160px;
+}
+
 
 /* police */
 
@@ -108,4 +160,18 @@ h2 {
 @font-face {
     font-family: 'Space Grotesk';
     src: url("Assets/Polices/space-grotesk-regular.otf") format("opentype");
+}
+
+
+/* Keyframes */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0px);
+    }
 }

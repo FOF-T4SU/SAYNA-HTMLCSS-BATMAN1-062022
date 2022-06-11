@@ -1,17 +1,33 @@
+/* SELECTEUR UNIVERSEL */
+
 * {
     margin: 0px;
     box-sizing: border-box;
+    animation-name: fadeIn;
+    animation-duration: 3s;
 }
 
 
-/* :root {
-    accent-color: #000000;
-    coloWhite: #FFFFFF
-} */
+/* VARIABLE DE COULEURS */
+
+:root {
+    --color-black: #000000;
+    --color-black1: #1f1e1e;
+    --color-wite: #FFFFFF;
+    --color-gris: #BCBBBD;
+    --color-rouge: #890008;
+    --color-transparent: #EDDEBF;
+    --color-jaune: #F8F184;
+    --color-blue: #19587D;
+    --color-marine: #071b27;
+}
+
+
+/* SELECTEUR */
 
 body {
-    background-color: #000000;
-    color: #FFFFFF;
+    background-color: var(--color-black);
+    color: var(--color-wite);
     font-family: 'Space Grotesk', Tahoma, sans-serif;
     font-size: 18px;
 }
@@ -81,14 +97,41 @@ form p {
     padding: 15px 0px;
 }
 
+select {
+    width: 100%;
+    font-size: 18px;
+    border-bottom: 2px solid var(--color-gris);
+    color: var(--color-gris);
+    padding: 15px 0px;
+    background: none;
+}
 
-/* input[type="radio"] {
-    display: none;
-} */
+select option {
+    padding: 15px 0px;
+    border-bottom: 2px solid var(--color-gris);
+    background: none;
+}
 
-* {
-    animation-name: fadeIn;
-    animation-duration: 3s;
+input[type="submit"] {
+    margin: auto;
+    padding: 15px;
+    background: linear-gradient(var(--color-transparent), var(--color-rouge));
+    opacity: 40%;
+    color: var(--color-wite);
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(var(--color-transparent), var(--color-rouge));
+    opacity: 100%;
+    color: var(--color-wite);
+}
+
+footer div {
+    text-align: center;
+}
+
+footer img {
+    margin: 15px;
 }
 
 
@@ -97,16 +140,16 @@ form p {
 .container {
     margin: 0px 102px;
     padding: 5%;
-    border-right: 1px solid #BCBBBD;
-    border-left: 1px solid #BCBBBD;
+    border-right: 1px solid var(--color-gris);
+    border-left: 1px solid var(--color-gris);
 }
 
 .logo-bat:hover {
-    background: #F8F184;
+    background: var(--color-jaune);
 }
 
 .header-nav {
-    border-bottom: 1px solid #BCBBBD;
+    border-bottom: 1px solid var(--color-gris);
     height: 132px;
 }
 
@@ -126,9 +169,8 @@ form p {
 }
 
 .rezo:hover {
-    background: #F8F184;
+    background: var(--color-jaune);
     border-radius: 25%;
-    color: #F8F184;
 }
 
 .sub-container-intro {
@@ -142,16 +184,16 @@ form p {
 .sub-container-intro button {
     padding: 15px 50px;
     margin: 30px;
-    background: linear-gradient(#EDDEBF, #19587D);
+    background: linear-gradient(var(--color-transparent), var(--color-blue));
     opacity: 40%;
-    color: #FFFFFF;
+    color: var(--color-wite);
     border: none;
 }
 
 .sub-container-intro button:hover {
-    background: linear-gradient(#EDDEBF, #19587D);
+    background: linear-gradient(var(--color-transparent), var(--color-blue));
     opacity: 100%;
-    color: #FFFFFF;
+    color: var(--color-wite);
 }
 
 .sub-container-intro img {
@@ -182,14 +224,14 @@ form p {
     display: inline-block;
     width: 80%;
     margin: 10px 50px;
-    border: 1px solid #BCBBBD;
+    border: 1px solid var(--color-gris);
     border-radius: 0px 10px 10px 0px;
 }
 
 .annonce {
     display: inline-block;
     width: 80%;
-    background: linear-gradient(#1f1e1e 50%, #071b27 100%);
+    background: linear-gradient(var(--color-black1) 50%, var(--color-marine) 100%);
     border-radius: 0px 10px 10px 0px;
 }
 
@@ -203,18 +245,23 @@ form p {
     width: 100%;
     font-size: 18px;
     border: none;
-    border-bottom: 2px solid #BCBBBD;
+    border-bottom: 2px solid var(--color-gris);
     background: none;
 }
 
-.new {
-    border: 1px solid #BCBBBD;
+input[type="button"] {
+    border: 1px solid var(--color-blue);
+    background: linear-gradient(var(--color-transparent), var(--color-blue));
+    opacity: 40%;
+    display: inline-block;
+    color: var(--color-wite);
     padding: 15px;
     margin: 15px;
 }
 
-.new:checked {
-    background: #19587D;
+input[type="button"]:hover {
+    background: linear-gradient(var(--color-transparent), var(--color-blue));
+    opacity: 100%;
 }
 
 
@@ -239,7 +286,7 @@ form p {
 }
 
 #contact {
-    background: linear-gradient(#1f1e1e 50%, #071b27 100%);
+    background: linear-gradient(var(--color-black1) 50%, var(--color-marine) 100%);
     text-align: center;
 }
 

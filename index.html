@@ -10,6 +10,8 @@
 </head>
 
 <body>
+
+    <!-- HEADER -->
     <header>
         <div class="header-rezo">
             <a href="#home"><img src="Assets/Logos/logo_bat_flèche.png" alt="logo-fleche-bat" class="logo-bat"></a>
@@ -34,6 +36,8 @@
     </header>
 
     <main>
+
+        <!-- BATMAN AU CINEMA -->
         <section id="hero">
             <div class="container">
                 <h2>BATMAN AU CINEMA</h2>
@@ -61,6 +65,7 @@
             </div>
         </section>
 
+        <!-- NEMESIS -->
         <section id="versus">
             <div class="container">
                 <h2>NEMESIS</h2>
@@ -84,6 +89,7 @@
             </div>
         </section>
 
+        <!-- ALLIES -->
         <section id="allie">
             <div class="container">
                 <h2>ALLIES</h2>
@@ -108,6 +114,7 @@
             </div>
         </section>
 
+        <!-- JUSTICE LEAGUE -->
         <section id="justice">
             <div class="container">
                 <h2>JUSTICE LEAGUE</h2>
@@ -117,6 +124,8 @@
             </div>
             <img src="Assets/Illustrations/Bathome11.png" alt="league">
         </section>
+
+        <!-- MULTIMEDIA -->
         <section id="media">
             <div class="container">
                 <h2>MULTIMEDIA</h2>
@@ -139,49 +148,54 @@
             </div>
         </section>
 
+        <!-- CONTACT -->
         <section id="contact">
             <div class="container">
                 <h2>PRENONS CONTACT</h2>
                 <form action="" method="post">
                     <p><label>ADRESSE EMAIL</label></p>
-                    <p><input type="mail" name="email" placeholder="Adresse email" class="saisi"></p>
+                    <p><input type="mail" name="email" placeholder="Adresse email" required class="saisi"></p>
                     <p><label>NEWSLETTER</label></p>
                     <p><label for="newsletter">En cochant cette case vous accepter de recevoir l'actualite concernant les avantures de Batman : </label><input type="checkbox" name="newsletter" id="newsletter" required></p>
                     <p>
-                        <select class="saisi">
-                            <option class="saisi">Choisissez la frequence à laquelle vous souhaitez recevoir votre newsletter</option>
-                            <option class="saisi">Une fois par semaine</option>
-                            <option class="saisi">Une fois toutes les deux semaines (2 fois par semaine)</option>
-                            <option class="saisi">Une fois par mois</option>
-                            <option class="saisi">Une fois tous les trois mois</option>
-                            <option class="saisi">Une fois tous les six mois</option>
+                        <select class="saisi" required>
+                            <option>Choisissez la frequence à laquelle vous souhaitez recevoir votre newsletter</option>
+                            <option>Une fois par semaine</option>
+                            <option>Une fois toutes les deux semaines (2 fois par semaine)</option>
+                            <option>Une fois par mois</option>
+                            <option>Une fois tous les trois mois</option>
+                            <option>Une fois tous les six mois</option>
                         </select>
                     </p>
                     <p style="border-bottom: 2px solid #BCBBBD;"><label>souhaitez vous recevoir des news</label></p>
                     <p style="text-align: center;">
-                        <input type="radio" name="news" id="film" class="new"><label for="film">Des films</label>
-                        <input type="radio" name="news" id="comic" class="new"><label for="comic">Des Comics</label>
-                        <input type="radio" name="news" id="tout" class="new"><label for="tout">De tout</label>
+                        <input type="button" name="news" id="film" value="Des films">
+                        <input type="button" name="news" id="comic" value="Des comics">
+                        <input type="button" name="news" id="tout" value="De tout">
                     </p>
                     <p><label>MESSAGE</label></p>
                     <p><textarea placeholder="Laisser un commentaire pour la communaute" class="saisi"></textarea></p>
-                    <p>
+                    <p style="text-align: center;">
                         <input type="submit" name="valid" value="CONFIRMER">
                     </p>
                 </form>
             </div>
         </section>
+
     </main>
 
+    <!-- FOOTER  -->
     <footer>
         <div class="container">
-            <div class="sub-container">
-                <img src="Assets/Logos/icon_guillemets_1.png" alt="guillement-gauche">
-                <p>La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles.</p>
-                <p>The Dark Knight : Le Chevalier Noir - Le Joker à Batman (2008)</p>
-                <img src="Assets/Logos/icon_guillemets_2.png" alt="guillement-droite">
+            <div>
+                <img src="Assets/Logos/icon_guillemets_1.png" alt="guillement-gauche" style="float: left;">
+                <div style="width: 50%; margin: auto; padding: 10% 25px; font-size: 22px; text-align: center;">
+                    <p>La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles.</p>
+                    <p style="font-weight: normal;">The Dark Knight : Le Chevalier Noir - Le Joker à Batman (2008)</p>
+                </div>
+                <img src="Assets/Logos/icon_guillemets_2.png" alt="guillement-droite" style="float: right;">
             </div>
-            <div class="sub-container">
+            <div style="clear: both;">
                 <img src="Assets/Logos/icon_WB.png" alt="wb">
                 <span>Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves.</span>
             </div>
@@ -189,9 +203,9 @@
                 <img src="Assets/Logos/logo_sayna_white.png" alt="sayna">
                 <img src="Assets/Logos/icon_x.png" alt="x">
                 <img src="Assets/Logos/icon_DC.png" alt="dc">
-                <img src="Assets/Logos/icon_facebook.png" alt="fb">
-                <img src="Assets/Logos/icon_ig.png" alt="ig">
-                <img src="Assets/Logos/icon_tw.png" alt="tw">
+                <img src="Assets/Logos/icon_facebook.png" alt="fb" class="rezo">
+                <img src="Assets/Logos/icon_ig.png" alt="ig" class="rezo">
+                <img src="Assets/Logos/icon_tw.png" alt="tw" class="rezo">
             </div>
         </div>
     </footer>

@@ -1,3 +1,14 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+/* :root {
+    accent-color: #000000;
+    coloWhite: #FFFFFF
+} */
+
 body {
     background-color: #000000;
     color: #FFFFFF;
@@ -27,12 +38,17 @@ nav a:hover {
 
 h2 {
     font-family: 'Rajdhani', Verdana, sans-serif;
+    padding: 10px 0px;
     font-size: 36px;
 }
 
 section p {
     text-align: justify;
     width: 80%;
+}
+
+p {
+    padding: 30px 0px;
 }
 
 img[alt="nemesis"] {
@@ -45,6 +61,30 @@ img[alt="bat-black"] {
     position: relative;
     left: 990px;
 }
+
+img[alt="fleche-gauche"],
+img[alt="fleche-droite"] {
+    padding-bottom: 80px;
+}
+
+img[alt="bande-annonce"] {
+    width: 100%;
+}
+
+form {
+    width: 80%;
+    margin: auto;
+    font-size: 22px;
+}
+
+form p {
+    padding: 15px 0px;
+}
+
+
+/* input[type="radio"] {
+    display: none;
+} */
 
 * {
     animation-name: fadeIn;
@@ -73,7 +113,7 @@ img[alt="bat-black"] {
 .header-rezo {
     position: fixed;
     top: 300px;
-    right: 2.5%;
+    right: 2%;
 }
 
 .header-rezo img {
@@ -94,12 +134,12 @@ img[alt="bat-black"] {
 .sub-container-intro {
     width: 60%;
     margin: auto;
-    padding: 15% 5px;
+    padding: 15% 25px;
     font-size: 22px;
     text-align: center;
 }
 
-.sub-container-intro input {
+.sub-container-intro button {
     padding: 15px 50px;
     margin: 30px;
     background: linear-gradient(#EDDEBF, #19587D);
@@ -108,7 +148,7 @@ img[alt="bat-black"] {
     border: none;
 }
 
-.sub-container-intro input:hover {
+.sub-container-intro button:hover {
     background: linear-gradient(#EDDEBF, #19587D);
     opacity: 100%;
     color: #FFFFFF;
@@ -125,13 +165,56 @@ img[alt="bat-black"] {
 
 .actor {
     width: 305px;
-    padding: 25px 25px 0px 0px;
-    display: inline-block;
+    margin: 15px 30px 15px 0px;
 }
 
 .actor p {
-    margin: auto;
+    margin: 10px auto;
     text-align: center;
+    padding: 0%;
+}
+
+.actor img:hover {
+    transform: scale(1.1);
+}
+
+.begins {
+    display: inline-block;
+    width: 80%;
+    margin: 10px 50px;
+    border: 1px solid #BCBBBD;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.annonce {
+    display: inline-block;
+    width: 80%;
+    background: linear-gradient(#1f1e1e 50%, #071b27 100%);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.annonce p {
+    margin: 0px;
+    padding: 10px;
+    text-align: initial;
+}
+
+.saisi {
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid #BCBBBD;
+    background: none;
+}
+
+.new {
+    border: 1px solid #BCBBBD;
+    padding: 15px;
+    margin: 15px;
+}
+
+.new:checked {
+    background: #19587D;
 }
 
 
@@ -147,6 +230,17 @@ img[alt="bat-black"] {
     background: url("../Assets/Illustrations/Bathome12.png") no-repeat;
     background-position-x: 850px;
     background-position-y: -160px;
+}
+
+#justice h2,
+#justice p {
+    width: 80%;
+    margin: auto;
+}
+
+#contact {
+    background: linear-gradient(#1f1e1e 50%, #071b27 100%);
+    text-align: center;
 }
 
 
